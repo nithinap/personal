@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Nithin AP
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://in.linkedin.com/in/nithinap}{\Large Nithin AP}} & Email : \href{mailto:nithin.apn@gmail.com}{nithin.apn@gmail.com}\\
+  \href{https://in.linkedin.com/in/nithinap}{https://in.linkedin.com/in/nithinap} & Mobile : +91-8095054098 
+\\
+  \href{https://github.com/nithinap/}{https://github.com/nithinap}
+\\
+  \href{https://www.codechef.com/users/nithinap}{https://www.codechef.com/users/nithinap}
+
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {LBS College Of Engineering}{Kasaragod, India}
+      {Bachelor of Technology in Computer Science \& Engineering(Hons.);  Perc: 81.00\%}{Jun. 2010 -- May. 2014}
+    \resumeSubheading
+      {Kerala Education Society Sr. Sec. School}{New Delhi, India}
+      {CBSE, AISSCE;  Perc: 85\%}{Apr. 2009 -- Mar. 2010}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Envestnet Yodlee}{Bengaluru, KA}
+      {Software Engineer}{Jul 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Realtime streaming platform(OLTP-Kudu)}
+          {Developed a realtime streaming platform to capture events occurring in Oracle databases from the CDC logs, streaming the change information into Kakfa topics from where the Spark streaming jobs replicate the information into Kudu. The platform serves realtime replication of financial data from traditional OLTP to Hadoop ecosystem and with the help of Kudu, a platform for faster analytics on rapidly changing data. Kudu significantly lowers the query latency for Apache Impala and Apache Spark.}
+         \vspace{4mm} \\
+         \textsl{Tech:} Apache Spark, Spark SQL, Apache Kafka, Apache Kudu, Apache Impala, JavaEE, Python, Oozie, Striim, YARN
+        \resumeItem{Reconciliation Extracts}
+          {Yodlee provides comprehensive financial data across retail banking, credit and wealth management, made possible through the strengths of our data acquisition capabilities, extensive data cleaning and enrichment expertise, at massive scale.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Infosys}{Bengaluru, KA}
+      {Senior System Engineer}{Oct 2014 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{Infosys Nia}
+          {Infosys Nia is a knowledge-based AI platform. It brings machine learning together with the deep knowledge of an organization to drive automation and innovation. This enables businesses to continuously reinvent their system landscapes. It captures the knowledge and know-how of people across fragmented and complex systems, and simplifies the continuous renovation of core business processes. \par Worked on problem analytics(PMA), Error-Alert analytics, programmable modules for anomaly detection, error extraction, classification and automated resolution using BPMN or probabilistic workflow models.}
+         \vspace{4mm} \\
+         \textsl{Tech:} Java/J2EE, shell scripting, Big Data, Spark, Machine Learning, Data Analytics, Hadoop, Kafka, Camunda, Grafana, Azkaban, Tomcat server, Sqoop
+         
+        \resumeItem{Streaming Processor rendering problem analytics and visualization}
+          {Developed stream processor to read live messages from external IBM MQs, feed to Kafka data sources and operations on topic feeds using Spark stream programming to render data for Visualization of business flows, calculating success/failure ratios and live analytics.}
+          \par 
+         \textsl{Tech:} Apache Kafka, Apache Spark, PostgresSQL, Java, JMS
+
+        \resumeItem{Exchange Simulator for NSE/BSE exchange}
+          {Exchange simulators are engines used to simulate exchange behavior which is used in QA environments for all trade flow testing. The project aimed at creating exchange engine simulating order based rule order enrichment, trade processing, acknowledgements and order routing to specific destinations for India exchange dedicated for pre-production and production mirror environments. \par Implemented message translator engine \& API which handles message conversion across two different protocols, viz. internal protocol and BOLT}	
+         \vspace{4mm} \\
+         \textsl{Tech:} C++, Python
+         
+        \resumeItem{Data adapter for ITSM tools}
+          {Developed generic ITSM adapter API for connecting to web service endpoints of ITSM tools on any remote host and fetching data in near real-time. Supports REST/SOAP endpoints on BMC Remedy and ServiceNow.}
+          \vspace{4mm} \\
+         \textsl{Tech:} Spring Boot, Maven, SOAP/REST web services
+        \resumeItem{RHEL6 DC Migration India RDS server and Viking}
+          {Reference data services(RDS) is a single place where global reference data is kept. This provides stand-alone service of reference data to various applications. It can receive requests over different interfaces such as DF, RMI, Tibco RV, UDP, MF or TCP/IP sockets.  Primarily it's made of SYBASE servers although other sources can used viz. CORBA, Futures DBs, socket based sources. \par Worked on migrating the RDS server to RHEL6 dynamic compute hosts and redesigning the workflow of DB transactions to ensure that the application would scale to meet future needs, improving existing data service channels to RDS servers and creating new service channels for NSE/BSE exchange summary information, designing dynamic update and data caching procedures based on triggers, indexing and stored procedures from Sybase DBs}
+           \vspace{4mm} \\
+         \textsl{Tech:} C++, Python
+        \resumeItem{Purge and data backup tool for automated maintenance of DC nodes and bare-metal hosts}
+          {Designed purge tool - centralized utility for automated housekeeping activities on large number of hosts. It reduces manual intervention significantly by automated disk space cleanup, archival, host sanitization and alerting for hosts with critical health. This reduced manual effort in maintenance activity by ~20\%}
+            \vspace{4mm} \\
+         \textsl{Tech:} Python, Autosys, Fabric alerts
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {VVDN Technologies}{Ernakulam, KL}
+      {Software Engineer}{Jun - Sep 2014}
+      \resumeItemListStart
+        \resumeItem{BeagleBoard Camera cape board driver upgrade}
+          {The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas instruments in association with Digi-Key and Newark element14. The camera cape board is a hardware capability extension board developed by VVDN Tech. for including camera use in the BeagleBoard. \par Worked on upgrading camera driver from  Debian 7.0(Wheezy) to Debian 10(Buster), improving the FPS rates to achieve minimum 32 FPS, to work moderately with 5MP webcams.}
+       \vspace{4mm} \\
+       \textsl{Tech:} Embedded C
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Eye Tracker System for disabled}
+      {A device to track pupil motion to render writing capabilities using Raspberry Pi aimed at empowering disabled with a mode of communication.}
+    \resumeSubItem{Evaluation of Google Tensorflow}
+      {Comparison of features of Tensorflow with Theano, Torch and detailed performance analysis}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages/Frameworks}
+   {Java/J2EE, Python, Unix Shell scripting, SQL, Spring MVC, Apache Spark, Spring Boot, Swagger UI, Junit, Maven, C++, C }
+
+   \resumeSubItem{Databases/Data warehouse}
+   {Apache Kudu, AWS Redshift, Hive, HDFS, Apache Impala, PostgresSQL, Sybase ASE, Oracle, MySQL}
+   
+   \resumeSubItem{Source Versioning}
+   {Perforce, Git, CVS, SVN, TFS}
+   
+   \resumeSubItem{Software}
+   {Eclipse, SoapUI, Grafana, Kibana, Apache Kafka, YARN, Oozie, JIRA, Bugzilla, Autosys, Vim, Jupyter, Microsoft Expressions Web, Matlab, MS Office}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
